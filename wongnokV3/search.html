@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--link star ratting-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Wongnok</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/default.css">    
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+
+    <!-- header navbar
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <b>Wong nok</b>
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>ปิด</span></a>
+            <div class="header-nav__content">
+                <h3>เมนู</h3>
+                <ul class="header-nav__list">
+                    <li class="current"><a class="list"  href="index.html" title="home">หน้าหลัก</a></li>
+                    <li><a class="list"  href="search.html" title="search">ค้นหา</a></li>
+                    <li><a class="list"  href="index.html#about" title="about">เกี่ยวกับ</a></li>
+                    
+                </ul>
+    
+                <p>สามารถติดตามรายละเอียดต่างๆได้ตามแฟนเพจ wongnok ได้ที่<br>
+                    Facebook:  Wongnokclub<br>
+                    Instagram: Wongnokpix <br>
+                   พร้อมร่วมกิจกรรมแสนสนุกได้ทุกวัน ชิงของรางวัลมากมาย</p>
+                <ul class="header-nav__social">
+                        <li>
+                            <a href="search.html">TH</a>
+                        </li>
+                        <li>
+                            <a href="searcheng.html">Eng</a>
+                        </li>
+                        
+                    </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">เมนู</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+  <!--======================================================-->
+ 
+  <div class="box" >
+        <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/wood.jpeg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+            <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+            <form  id="mainform" class="needs-validation " novalidate>
+    <div class="container boxsearchregis home-content__main">      
+                    <div class="row boxtopic">
+                        <div class="col-12">  
+        <h1><p><b>&nbsp;&nbsp;ค้นหาสถานที่</b>&nbsp;&nbsp;<img class="logosearch"src="images/location-marker-flat.png" alt=""></p></h1>
+                        </div>
+                    </div>
+            <div class="form-group">
+                <label for="keyword">สถานที่</label>
+                <input type="text" name="keyword" id="keyword" class="form-control " placeholder="ชื่อสถานที่ เช่น ร้านกาแฟ, อาหารทะเล" required>
+                <div class="invalid-feedback">
+                    กรุณาใส่ชื่อสถานที่
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">ประเภทสถานที่</label>
+                <select class="form-control form-control-lg" name="type" id="type" required>
+                    <option value="">---เลือกประเภทสถานที่---</option>
+                    <option value="resturant">ร้านอาหาร</option>
+                    <option value="doctor">โรงพยาบาล/คลีนิก</option>
+                    <option value="beauty_salon">ร้านเสริมสวย</option>
+                    <option value="gas_station">ปั๊มน้ำมัน</option>
+                    <option value="atm">ATM</option>
+                </select>
+                <div class="invalid-feedback">
+                    กรุณาเลือกประเภทสถถานที่
+                </div>
+            </div>
+            <div class="form-group">
+                    <label for="">ระยะทาง</label>
+                    <select class="form-control form-control-lg" name="radius" id="radius" required>
+                        <option value="">---เลือกระยะทาง---</option>
+                        <option value="500">500 เมตร</option>
+                        <option value="1000">1 กิโลเมตร</option>
+                        <option value="5000">5 กิโลเมตร</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        กรุณาเลือกระยะทาง
+                    </div>
+                </div>
+              
+            <div class="row">
+                <div class="col-12 align-center">
+                        <a id="search" class=" button smoothscroll" href="#searchresultTH" role="submit"><span><b>ค้นหา</b></span></a>
+                </div>
+            </div>
+           
+            <p></p>
+            <br>
+           <hr color="white">
+        <div class="boxresult">
+            <div id="reSth"></div>
+           <br>
+            <div id="searchresultTH" class="searchresult align-center"></div>              
+        </div>           
+    </div>
+</form>
+
+</div>
+
+
+     <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="js/placesearch.js"></script>
+    <script src="js/search.js"></script>
+   
+</body>
+
+</html>

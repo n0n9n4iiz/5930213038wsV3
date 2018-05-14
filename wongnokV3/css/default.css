@@ -1,0 +1,10 @@
+.thumbnail{
+    height: 150px;
+    width: 200px;
+}
+.picsearch{
+    border: 3px outset black;
+    height: 150px;
+    width: 200px; 
+}
+

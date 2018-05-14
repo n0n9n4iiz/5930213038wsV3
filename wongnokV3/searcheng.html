@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Wongnok</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/default.css">    
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+    <!-- header navbar
+    ================================================== -->
+    <header class="s-header">
+
+            <div class="header-logo">
+                    <a class="site-logo" href="indexeng.html">
+                        <b>Wong nok</b>
+                    </a>
+                </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Menu</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class=""  href="indexeng.html#home" title="home">Homepage</a></li>
+                    <li><a class=""  href="searcheng.html" title="search">Search</a></li>
+                    <li><a class=""  href="indexeng.html#about" title="about">About</a></li>
+                    
+                </ul>
+    
+                <p>You can follow the details by fan page wongnok at<br>
+                    Facebook:  Wongnokclub<br>
+                    Instagram: Wongnokpix <br>
+                    Twiiter:   Wongnokna<br>
+                    you can join an activity of Wongnok everyday and take a lot of prize</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="search.html">TH</a>
+                    </li>
+                    <li>
+                        <a href="searcheng.html">Eng</a>
+                    </li>
+                    
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+  <!--======================================================-->
+ 
+  <div class="box" >
+      
+  <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/wood.jpeg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+  <form  id="mainform" class="needs-validation " novalidate>
+    <div class="container boxsearchregis home-content__main">      
+                    <div class="row boxtopic">
+                        <div class="col-12">  
+        <h2><p><b>&nbsp;&nbsp;Search&nbsp;location</b>&nbsp;<img class="logosearch"src="images/location-marker-flat.png" alt=""></p></h2>
+                        </div>
+                    </div>
+            <div class="form-group">
+                <label for="keyword">Location</label>
+                <input type="text" name="keyword" id="keyword" class="form-control " placeholder="Keyword ex. Cafe, Seafood" required>
+                <div class="invalid-feedback">
+                    Please, input a keyword.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Type</label>
+                <select class="form-control form-control-lg" name="type" id="type" required>
+                    <option value="">---Select a type---</option>
+                    <option value="resturant">Resturant</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="beauty_salon">Beauty Salon</option>
+                    <option value="gas_station">Gas Station</option>
+                    <option value="atm">ATM</option>
+                </select>
+                <div class="invalid-feedback">
+                        Please, select a type.
+                    </div>
+            </div>
+            <div class="form-group">
+                    <label for="">Distance</label>
+                    <select class="form-control form-control-lg" name="radius" id="radius" required>
+                        <option value="">---Select a distance---</option>
+                        <option value="500">500 m</option>
+                        <option value="1000">1 km</option>
+                        <option value="5000">5 km</option>
+                    </select>
+                    <div class="invalid-feedback">
+                            Please, select a distance.
+                        </div>
+                </div>
+              
+            <div class="row">
+                <div class="col-12 align-center">
+                        <a id="search" class=" button smoothscroll" href="#searchresultENG" role="submit"><span><b>Search</b></span></a>
+                </div>
+            </div>
+           
+            <p></p>
+            <br>
+            <br>
+           <hr color="white">
+        <div class="boxresult">
+            <div id="reSeng"></div>
+           <br>
+            <div id="searchresultENG" class="searchresult align-center"></div>              
+        </div>           
+    </div>
+</form>
+</section>
+</div>
+
+
+     <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="js/placesearch.js"></script>
+    <script src="js/search.js"></script>
+   
+</body>
+
+</html>
